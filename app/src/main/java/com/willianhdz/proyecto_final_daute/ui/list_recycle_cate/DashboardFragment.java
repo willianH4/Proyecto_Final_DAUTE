@@ -1,4 +1,4 @@
-package com.example.app_crud_mysql.ui.list_recycle_cate;
+package com.willianhdz.proyecto_final_daute.ui.list_recycle_cate;
 
 import android.os.Bundle;
 import android.util.Log;
