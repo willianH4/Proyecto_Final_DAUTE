@@ -22,8 +22,8 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.textfield.TextInputLayout;
 import com.example.app_crud_mysql.MySingleton;
-import com.example.app_crud_mysql.R;
-import com.example.app_crud_mysql.Setting_VAR;
+import com.willianhdz.proyecto_final_daute.R;
+import com.willianhdz.proyecto_final_daute.Setting_VAR;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -51,7 +51,6 @@ public class Categoria extends Fragment implements View.OnClickListener{
         ti_namecategoria = root.findViewById(R.id.ti_namecategoria);
         et_idcategoria = root.findViewById(R.id.et_idcategoria);
         et_namecategoria = root.findViewById(R.id.et_namecategoria);
-        et_categpria = root.findViewById(R.id.et_categoria);
         sp_estado = root.findViewById(R.id.sp_estado);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
                 R.array.estadoCategorias, android.R.layout.simple_spinner_item);

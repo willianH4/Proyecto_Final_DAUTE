@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.app_crud_mysql.ui.dts.dto_categorias;
-import com.example.app_crud_mysql.R;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_categorias;
+import com.willianhdz.proyecto_final_daute.R;
 
 import java.util.List;
 
