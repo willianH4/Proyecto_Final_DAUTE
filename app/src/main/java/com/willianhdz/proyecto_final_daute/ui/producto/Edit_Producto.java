@@ -212,7 +212,7 @@ public class Edit_Producto extends AppCompatActivity {
 //Toast.makeText(getContext(), "Good...",Toast.LENGTH_SHORT).show();
                     String esta = sp_estadoProductos.getSelectedItem().toString();
                     update_productos(getApplicationContext(), id, nombre, descripcion, stock, precio, unidad, esta, idcategoria);
-                    Intent intent = new Intent(com.willianhdz.proyecto_final_daute.ui.producto.Edit_Producto.this, MainActivity.class);
+                    Intent intent = new Intent(Edit_Producto.this, MainActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), "Debe seleccionar la dto_categorias.", Toast.LENGTH_SHORT).show();
@@ -226,7 +226,7 @@ public class Edit_Producto extends AppCompatActivity {
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.willianhdz.proyecto_final_daute.ui.producto.Edit_Producto.this, MainActivity.class);
+                Intent intent = new Intent(Edit_Producto.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,7 +1,5 @@
 package com.willianhdz.proyecto_final_daute.ui.categoria;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -48,12 +48,9 @@ public class Edit_Categoria extends AppCompatActivity {
         btnUpdate = findViewById(R.id.btnUpdate);
         btnSalir = findViewById(R.id.btnSalir);
 
-       btnSalir.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent intent = new Intent(Edit_Categoria.this, MainActivity.class);
-               startActivity(intent);
-           }
+       btnSalir.setOnClickListener(view -> {
+           Intent intent = new Intent(Edit_Categoria.this, MainActivity.class);
+           startActivity(intent);
        });
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(),
@@ -117,25 +114,22 @@ public class Edit_Categoria extends AppCompatActivity {
                 } else if (spinner.getSelectedItemPosition() > 0){
                     //this action save in the BD
                     String est = (String) spinner.getSelectedItem();
-                    udpate_server(getApplicationContext(), Integer.parseInt(id), nombre, est);
-                    Intent intent = new Intent(Edit_Categoria.this, MainActivity.class);
-                    startActivity(intent);
+                    udpate_server(getApplicationContext(), Integer.parseInt(id), nombre, Integer.parseInt(est));
                 } else {
                     Toast.makeText(getApplicationContext(), "Seleccione un estado para la categoria", Toast.LENGTH_SHORT).show();
                 }
-                btnSalir.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Edit_Categoria.this, MainActivity.class);
-                        startActivity(intent);
-                    }
-                });
-
+            }
+        });
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(com.willianhdz.proyecto_final_daute.ui.categoria.Edit_Categoria.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
 
-    private void udpate_server(final Context context, final int id_cat_up, final String nom_cat_up, final String esta_cat_up) {
+    private void udpate_server(final Context context, final int id_cat_up, final String nom_cat_up, final int esta_cat_up) {
         StringRequest request = new StringRequest(Request.Method.POST, Setting_VAR.URL_update_categoria,
                 new Listener<String>() {
                     @Override
@@ -143,7 +137,7 @@ public class Edit_Categoria extends AppCompatActivity {
                         JSONObject requestJSON = null;
                         try {
                             requestJSON = new JSONObject(response.toString());
-                            String estado = requestJSON.getString("estad");
+                            String estado = requestJSON.getString("estado");
                             String mensaje = requestJSON.getString("mensaje");
                             if(estado.equals("1")){
                                 Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show();
@@ -169,7 +163,7 @@ public class Edit_Categoria extends AppCompatActivity {
                 map.put("Accept", "application/json");
                 map.put("id_cat", String.valueOf(id_cat_up));
                 map.put("nom_cat", nom_cat_up);
-                map.put("estado", esta_cat_up);
+                map.put("estado", String.valueOf(esta_cat_up));
                 return map;
             }
         };

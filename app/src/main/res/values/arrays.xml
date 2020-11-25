@@ -2,7 +2,7 @@
 <resources>
     <string-array name="estadoCategorias" >
         <item>Selecione estado categoria</item>
-        <item>O </item>
+        <item>0</item>
         <item>1</item>
 
     </string-array>
@@ -29,8 +29,8 @@
     </string-array>
     <string-array name="Preguntas">
         <item>Seleccione una pregunta </item>
-        <item>¿Nombre de tu mama?</item>
-        <item>¿Nombre de tu primera mascota?</item>
-        <item>¿Cual fue tu primera escuela?</item>
+        <item>1 ¿Nombre de tu mama?</item>
+        <item>2 ¿Nombre de tu primera mascota?</item>
+        <item>3 ¿Cual fue tu primera escuela?</item>
     </string-array>
 </resources>

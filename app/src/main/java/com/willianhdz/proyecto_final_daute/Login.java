@@ -88,7 +88,7 @@ public class Login extends AppCompatActivity {
                 return map;
             }
         };
-        com.example.app_crud_mysql.MySingleton.getInstance(context).addToRequestQueue(request);
+        com.willianhdz.proyecto_final_daute.MySingleton.getInstance(context).addToRequestQueue(request);
     }
     private void vaciarcampos() {
         edtUsuario.setText(null);

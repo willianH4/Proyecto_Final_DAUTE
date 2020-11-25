@@ -1,5 +1,6 @@
 package com.willianhdz.proyecto_final_daute;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -9,6 +10,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.willianhdz.proyecto_final_daute.ui.home.HomeFragment;
+import com.willianhdz.proyecto_final_daute.ui.list_recycle_cate.DashboardFragment;
+import com.willianhdz.proyecto_final_daute.ui.list_recycle_pro.RecyclerviewProductos;
+import com.willianhdz.proyecto_final_daute.ui.list_recycle_usu.RecyclerviewUsuarios;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -19,7 +24,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -37,13 +42,18 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_categoria, R.id.nav_creador, R.id.nav_producto, R.id.nav_usuario, R.id.nav_listviewUsuario, R.id.nav_listviewCategoria, R.id.nav_listviewProducto)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+        bottomNavigationView.setSelectedItemId(R.id.nav_home);
     }
 
     @Override
@@ -60,4 +70,31 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+    HomeFragment home = new HomeFragment();
+    RecyclerviewProductos pro = new RecyclerviewProductos();
+    RecyclerviewUsuarios usu = new RecyclerviewUsuarios();
+    DashboardFragment cate = new DashboardFragment();
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out).replace(R.id.nav_host_fragment, home).commit();
+                return true;
+
+            case R.id.nav_recycleviewcategoria:
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out).replace(R.id.nav_host_fragment, cate).commit();
+                return true;
+
+            case R.id.nav_recyclerviewProductos:
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out).replace(R.id.nav_host_fragment, pro).commit();
+                return true;
+
+            case R.id.nav_RecyclerviewUsuario:
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in, R.anim.fade_out).replace(R.id.nav_host_fragment, usu).commit();
+                return true;
+        }
+        return false;
+    }
 }

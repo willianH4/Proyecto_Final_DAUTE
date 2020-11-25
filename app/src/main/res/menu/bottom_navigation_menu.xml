@@ -5,21 +5,19 @@
         android:icon="@drawable/ic_home"
         android:title="Home" />
 
-    <item android:id="@+id/nav_categoria"
-        android:icon="@drawable/ic_cate"
-        android:title="Categoria" />
-
-    <item android:id="@+id/nav_producto"
-        android:icon="@drawable/ic_key"
-        android:title="Producto" />
-
-    <item android:id="@+id/nav_listviewCategoria"
-        android:icon="@drawable/ic_lista"
-        android:title="List view" />
-
     <item android:id="@+id/nav_recycleviewcategoria"
         android:icon="@drawable/ic_descrip"
-        android:title="recycleview" />
+        android:title="Categoria" />
+
+    <item android:id="@+id/nav_recyclerviewProductos"
+        android:icon="@drawable/ic_descrip"
+        android:title="Producto" />
+
+    <item android:id="@+id/nav_RecyclerviewUsuario"
+        android:icon="@drawable/ic_descrip"
+        android:title="Usuario" />
+
+
 
 
 </menu>

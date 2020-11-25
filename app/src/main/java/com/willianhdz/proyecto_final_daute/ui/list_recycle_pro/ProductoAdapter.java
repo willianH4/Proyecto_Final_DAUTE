@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.app_crud_mysql.R;
-import com.example.app_crud_mysql.ui.dts.dto_productos;
+import com.willianhdz.proyecto_final_daute.R;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_productos;
 
 import java.util.List;
 

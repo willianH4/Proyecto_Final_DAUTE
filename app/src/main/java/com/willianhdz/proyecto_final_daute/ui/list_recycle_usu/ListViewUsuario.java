@@ -21,10 +21,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.app_crud_mysql.MySingleton;
-import com.example.app_crud_mysql.R;
-import com.example.app_crud_mysql.Setting_VAR;
-import com.example.app_crud_mysql.ui.dts.dto_usuarios;
+import com.willianhdz.proyecto_final_daute.MySingleton;
+import com.willianhdz.proyecto_final_daute.R;
+import com.willianhdz.proyecto_final_daute.Setting_VAR;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_usuarios;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -91,7 +91,7 @@ public class ListViewUsuario extends Fragment {
 
                         listaUsers.add(objUsuarios);
 
-                        lista.add("Id usuario: "+listaUsers.get(i).getId() + "\nNombre: " + listaUsers.get(i).getNombre() + "\nApellidos " + listaUsers.get(i).getApellido() + "\nCorreo: "
+                        lista.add("\n**       **\n"+ "Id usuario: "+listaUsers.get(i).getId() + "\nNombre: " + listaUsers.get(i).getNombre() + "\nApellidos " + listaUsers.get(i).getApellido() + "\nCorreo: "
                         + listaUsers.get(i).getCorreo() + "\nUsuario: " + listaUsers.get(i).getUsuario() + "\nClave: " + listaUsers.get(i).getClave() + "\nTipo: "
                          + listaUsers.get(i).getTipo() + "\nEstado " + listaUsers.get(i).getEstado() + "\nPregunta: " + listaUsers.get(i).getPregunta() + "\nRespuesta: "
                         + listaUsers.get(i).getRespuesta() + "\nFecha de registro: " + listaUsers.get(i).getFecha_registro());

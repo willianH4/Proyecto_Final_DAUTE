@@ -24,12 +24,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
-import com.example.app_crud_mysql.MySingleton;
-import com.example.app_crud_mysql.R;
-import com.example.app_crud_mysql.Setting_VAR;
-import com.example.app_crud_mysql.ui.dts.dto_categorias;
-import com.example.app_crud_mysql.ui.dts.dto_productos;
-import com.example.app_crud_mysql.ui.dts.dto_usuarios;
+import com.willianhdz.proyecto_final_daute.MySingleton;
+import com.willianhdz.proyecto_final_daute.R;
+import com.willianhdz.proyecto_final_daute.Setting_VAR;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_categorias;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_productos;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_usuarios;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONArray;

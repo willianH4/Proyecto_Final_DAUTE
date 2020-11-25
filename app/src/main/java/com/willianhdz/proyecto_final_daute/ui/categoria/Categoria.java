@@ -118,7 +118,7 @@ Toast.LENGTH_SHORT);
                 }else if(sp_estado.getSelectedItemPosition() > 0){
                     //Acciones para guardar registro en la base de datos.
                    // Toast.makeText(getContext(), "Registro guardado", Toast.LENGTH_SHORT).show();
-                    save_server(getContext(), Integer.parseInt(id), nombre, datoSelect);
+                    save_server(getContext(), Integer.parseInt(id), nombre, Integer.parseInt(datoSelect));
                 }else{
                     Toast.makeText(getContext(), "Debe seleccionar un estado para la dto_categorias",
                             Toast.LENGTH_SHORT).show();
@@ -167,7 +167,7 @@ Toast.LENGTH_SHORT);
         }
     }
 
-    private void save_server(final Context context, final int id_categoria, final String nom_categoria, final String
+    private void save_server(final Context context, final int id_categoria, final String nom_categoria, final int
             estado_categoria) {
         StringRequest request = new StringRequest(Request.Method.POST, Setting_VAR.URL_guardar_categoria,
                 new Response.Listener<String>() {
@@ -202,7 +202,7 @@ Toast.LENGTH_SHORT);
                 map.put("Accept", "application/json");
                 map.put("id", String.valueOf(id_categoria));
                 map.put("nombre", nom_categoria);
-                map.put("estado", estado_categoria);
+                map.put("estado", String.valueOf(estado_categoria));
                 return map;
             }
         };

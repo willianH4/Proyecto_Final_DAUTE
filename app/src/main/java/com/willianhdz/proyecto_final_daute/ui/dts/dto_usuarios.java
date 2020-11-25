@@ -1,4 +1,4 @@
-package com.example.app_crud_mysql.ui.dts;
+package  com.willianhdz.proyecto_final_daute.ui.dts;
 
 public class dto_usuarios {
     int id;

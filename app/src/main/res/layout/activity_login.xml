@@ -88,7 +88,6 @@
                 android:text="INGRESAR"
                 android:layout_marginLeft="@dimen/space20dp"
                 android:layout_marginRight="@dimen/space20dp"
-
                 />
 
 <!--
