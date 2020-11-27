@@ -3,26 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.categoria.Categoria">
-
+    <TextView
+        android:background="@color/dodgerblue"
+        android:textColor="@color/purple"
+        android:text="Categoria"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ti_idcategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:textColorHint="@color/grey1"
+        app:boxBackgroundColor="@color/edittex">
        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
 
             <EditText
                 android:id="@+id/et_idcategoria"
-                android:layout_width="276dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:drawableStart="@drawable/ic_key"
@@ -35,26 +42,23 @@
                 android:textColor="#03168B"
                 android:textSize="14dp" />
 
-            <Button
-                android:id="@+id/btnbuscar"
-                android:visibility="gone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:textColor="@color/white"
-                android:text="Buscar"/>
-
-        </LinearLayout>
     </com.google.android.material.textfield.TextInputLayout>
-
-
+    <Button
+        android:id="@+id/btnbuscar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button"
+        android:textColor="@color/white"
+        android:text="Buscar"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ti_namecategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="120dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        app:boxBackgroundColor="@color/edittex"
         android:textColorHint="@color/grey1">
         <EditText
             android:id="@+id/et_namecategoria"
@@ -79,7 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="24dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="@dimen/space200dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/estilospinner"
         android:paddingLeft="20dp"
@@ -91,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/white"

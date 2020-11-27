@@ -1,6 +1,7 @@
 package com.willianhdz.proyecto_final_daute;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -68,6 +69,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest. xml.
+        int id = item.getItemId();
+
+        if (id == R.id.closet) {
+
+            Intent listViewActivity = new Intent(MainActivity.this, Login.class);
+            startActivity(listViewActivity);
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     HomeFragment home = new HomeFragment();

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.usuario.usuario">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,22 +14,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:background="@color/dodgerblue"
+                android:textColor="@color/purple"
+                android:text="Usuario"
+                android:padding="5dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ti_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:textColorHint="@color/grey1">
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
+                android:textColorHint="@color/grey1"
+                app:boxBackgroundColor="@color/edittex">
 
-                   android:orientation="horizontal">
                 <EditText
                         android:id="@+id/et_id_usu"
-                        android:layout_width="231dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:drawableStart="@drawable/ic_key"
@@ -40,18 +47,19 @@
                         android:paddingLeft="1dp"
                         android:textColor="#03168B"
                         android:textSize="14dp" />
-                    <Button
-                        android:id="@+id/btnbuscarUsu"
-                        android:visibility="gone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/button"
-                        android:textColor="@color/white"
-                        android:text="Buscar"/>
 
-               </LinearLayout>
+
+
 
             </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnbuscarUsu"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/button"
+                android:textColor="@color/white"
+                android:text="Buscar"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ti_nombre_usu"
                 android:layout_width="match_parent"
@@ -59,6 +67,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_nombre_usu"
@@ -82,6 +91,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_apellido_usu"
@@ -106,6 +116,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_correo"
@@ -113,7 +124,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:paddingStart="1dp"
                     android:drawableStart="@drawable/ic_key"
                     android:ems="10"
                     android:hint="* correo"
@@ -128,6 +138,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_usuario"
@@ -135,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:paddingStart="1dp"
+                    app:boxBackgroundColor="@color/edittex"
                     android:drawableStart="@drawable/ic_key"
                     android:ems="10"
                     android:hint="* Usuario"
@@ -150,6 +161,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_clave"
@@ -157,7 +169,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:paddingLeft="1dp"
                     android:drawableStart="@drawable/ic_key"
                     android:ems="10"
                     android:hint="* Password"
@@ -218,6 +229,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_respuesta"
@@ -225,7 +237,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:paddingStart="1dp"
                     android:drawableStart="@drawable/ic_key"
                     android:ems="10"
                     android:hint="* Respuesta"
@@ -240,6 +251,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
+
                 android:layout_marginRight="20dp"
                 android:background="@color/white">
                 <Button
@@ -249,6 +261,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Guardar"
+                    android:drawableEnd="@drawable/ic_closet"
                     android:textColor="@color/white"
                     android:background="@color/button"
                     />
@@ -261,6 +274,7 @@
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_closet"
                     android:layout_weight="1"
                     android:text="Nuevo Producto"
                     android:textColor="@color/white"

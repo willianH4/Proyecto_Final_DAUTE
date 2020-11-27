@@ -8,7 +8,7 @@ public class Setting_VAR {
     public static final String mensajex="";
 
 
-
+/*
  // Categoria
  public static final String URL_guardar_categoria = "http://192.168.1.20/service2020/guardar_categorias.php";
  // public static final String URL_consultaAllCategorias = "https://proyectorsfxresng.000webhostapp.com/service2020/buscar_Categorias.php";
@@ -35,6 +35,34 @@ public class Setting_VAR {
  public static final String URL_consultarAllUsuario = "http://192.168.1.20/service2020/buscarALLusuario.php";
  public static final String URL_consultarAllUsuario2 = "http://192.168.1.20/service2020/buscarALLUsuario2.php";
 
+*/
+//Remota
+
+ // Categoria
+ public static final String URL_guardar_categoria = "https://proyectorsfxresng.000webhostapp.com/ALV2/guardar_categorias.php";
+ // public static final String URL_consultaAllCategorias = "https://proyectorsfxresng.000webhostapp.com/service2020/buscar_Categorias.php";
+ public static final String URL_consultaCategoria_id = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscar_categoria_id.php";
+ public static final String URL_update_categoria = "https://proyectorsfxresng.000webhostapp.com/ALV2/actualizar_categoria.php";
+ public static final String URL_delete_categoria = "https://proyectorsfxresng.000webhostapp.com/ALV2/eliminar_categoria.php";
+ public static final String URL_Login = "https://proyectorsfxresng.000webhostapp.com/ALV2/validar_usuarios.php";
+
+
+ public static final String URL_consultaAllCategorias = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscar_Categorias.php";
+
+ //Producto
+ public static final String URL_registrar_productos = "https://proyectorsfxresng.000webhostapp.com/ALV2/guardar_producto.php";
+ public static final String URL_update_productos = "https://proyectorsfxresng.000webhostapp.com/ALV2/actualizar_producto.php";
+ public static final String URL_delete_productos = "https://proyectorsfxresng.000webhostapp.com/ALV2/eliminar_producto.php";
+ public static final String URL_consultarAllProductos = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscarALLProductos.php";
+ public static final String URL_consultarAllProductos2 = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscarALLProductos2.php";
+
+
+ //Usuario
+ public static final String URL_guardar_usuario = "https://proyectorsfxresng.000webhostapp.com/ALV2/guardar_usuarios.php";
+ public static final String URL_update_usuario = "https://proyectorsfxresng.000webhostapp.com/ALV2/actualizar_usuario.php";
+ public static final String URL_delete_usuario = "https://proyectorsfxresng.000webhostapp.com/ALV2/eliminar_usuario.php";
+ public static final String URL_consultarAllUsuario = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscarALLusuario.php";
+ public static final String URL_consultarAllUsuario2 = "https://proyectorsfxresng.000webhostapp.com/ALV2/buscarALLUsuario2.php";
 
 
 

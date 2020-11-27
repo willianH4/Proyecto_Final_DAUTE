@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.producto.Producto">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,22 +14,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:background="@color/navy"
+                android:textColor="@android:color/white"
+                android:text="Producto"
+                android:padding="5dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ti_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal" >
 
                     <EditText
                         android:id="@+id/et_id"
-                        android:layout_width="231dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:drawableStart="@drawable/ic_key"
@@ -36,21 +43,22 @@
                         android:ems="10"
                         android:hint="* Id Producto"
                         android:inputType="text"
-                        android:paddingLeft="1dp"
+                        android:paddingStart="1dp"
                         android:textColor="#03168B"
                         android:textSize="14dp" />
-                    <Button
-                        android:id="@+id/btnbuscarPro"
-                        android:visibility="gone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/button"
-                        android:textColor="@color/white"
-                        android:text="Buscar"/>
 
-                </LinearLayout>
+
+
 
             </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnbuscarPro"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/button"
+                android:textColor="@color/white"
+                android:text="Buscar"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ti_nombre_prod"
                 android:layout_width="match_parent"
@@ -58,6 +66,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_nombre_prod"
@@ -81,6 +90,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_descripcion"
@@ -89,12 +99,12 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text=""
                     android:drawablePadding="5dp"
-                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
                     android:drawableStart="@drawable/ic_descrip"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:textColor="#03168B"
                     android:hint="Descripción del Producto"
-                    android:background="@drawable/estiloedit"
+
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -105,6 +115,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_stock"
@@ -127,6 +138,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_precio"
@@ -149,6 +161,7 @@
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                app:boxBackgroundColor="@color/edittex"
                 android:textColorHint="@color/grey1">
                 <EditText
                     android:id="@+id/et_unidadmedida"
