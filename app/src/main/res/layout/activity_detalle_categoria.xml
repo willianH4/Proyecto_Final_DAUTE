@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/fondo"
     tools:context=".ui.list_recycle_cate.DetalleCategoria">
 
 <RelativeLayout
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/linearOne"
             android:orientation="vertical"
-            android:background="@color/azure"
+            android:background="@color/fondo2"
             android:padding="6dp"
             android:gravity="center">
 

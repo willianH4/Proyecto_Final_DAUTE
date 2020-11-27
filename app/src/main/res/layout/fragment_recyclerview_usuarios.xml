@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/fondo"
     tools:context=".ui.list_recycle_usu.RecyclerviewUsuarios">
 
     <androidx.recyclerview.widget.RecyclerView

@@ -3,13 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo2"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.dashboard.ListViewUsuario">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10dp"
+        android:text="List Usuario"
+        android:textAlignment="center"
+        android:textColor="@color/midnightblue"
+        android:textSize="@dimen/space25dp"
+        android:textStyle="bold"
+        />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/fm2"
         android:layout_width="match_parent"
-        android:layout_height="608dp"
+        android:layout_height="681dp"
         android:layout_marginTop="50dp"
         android:padding="20dp"
         android:textAlignment="center"

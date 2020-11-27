@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.usuario.usuario">
 
@@ -15,8 +16,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:background="@color/dodgerblue"
-                android:textColor="@color/purple"
+                android:background="@color/navy"
+                android:textColor="@android:color/white"
                 android:text="Usuario"
                 android:padding="5dp"
                 android:textSize="25dp"
