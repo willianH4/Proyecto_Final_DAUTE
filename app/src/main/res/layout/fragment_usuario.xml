@@ -253,7 +253,7 @@
                 android:layout_marginLeft="20dp"
 
                 android:layout_marginRight="20dp"
-                android:background="@color/white">
+                >
                 <Button
                     android:id="@+id/btnSave_usu"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"

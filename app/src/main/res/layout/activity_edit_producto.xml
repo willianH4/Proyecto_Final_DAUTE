@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +9,8 @@
             tools:context=".ui.categoria.Edit_Categoria">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
                 android:textColor="@android:color/white"
                 android:text="Editar Producto"
                 android:padding="5dp"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -46,9 +46,10 @@
                         android:ems="10"
                         android:hint="* Id Producto"
                         android:inputType="text"
-                        android:paddingLeft="1dp"
+                        android:paddingStart="1dp"
                         android:textColor="#03168B"
-                        android:textSize="14dp" />
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
                     android:drawableStart="@drawable/ic_key"
                     android:ems="10"
                     android:hint="* Nombre del Producto"
@@ -224,7 +225,7 @@
                     android:layout_weight="1"
                     android:text="Actualizar"
                     android:textColor="@color/white"
-                    android:background="@color/button"
+                    android:background="@color/darkorchid"
                     />
                 <Space
                     android:layout_width="0dp"
@@ -238,7 +239,7 @@
                     android:layout_weight="1"
                     android:text="Salir"
                     android:textColor="@color/white"
-                    android:background="@color/button"
+                    android:background="@color/darkorchid"
                     />
             </LinearLayout>
         </LinearLayout>
