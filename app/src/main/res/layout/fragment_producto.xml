@@ -231,9 +231,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:text="Guardar"
+                    android:drawableLeft="@drawable/ic_guardar"
                     android:textColor="@color/white"
-                    android:background="@color/button"
+                    android:background="@drawable/estiloboton2"
                     />
                 <Space
                     android:layout_width="0dp"
@@ -246,8 +248,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Nuevo Producto"
+                    android:drawableLeft="@drawable/ic_editar"
                     android:textColor="@color/white"
-                    android:background="@color/button"
+                    android:background="@drawable/estiloboton2"
                     />
             </LinearLayout>
 
