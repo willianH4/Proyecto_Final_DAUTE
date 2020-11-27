@@ -79,7 +79,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="@dimen/space20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/estilospinner"
+                    android:background="@drawable/estilospinner2"
                     android:popupBackground="@color/black"
                     android:backgroundTint="@color/black"
                     android:outlineAmbientShadowColor="@color/black"

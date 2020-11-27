@@ -85,7 +85,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="@dimen/space200dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/estilospinner"
+        android:background="@drawable/estilospinner2"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:spinnerMode="dropdown"

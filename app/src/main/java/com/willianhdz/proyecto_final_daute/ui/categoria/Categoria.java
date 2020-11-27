@@ -323,7 +323,7 @@ Toast.LENGTH_SHORT);
         et_idcategoria.setText(null);
         et_namecategoria.setText(null);
         sp_estado.setSelection(0);
-        et_categpria.setText(null);
+
     }
 
 }

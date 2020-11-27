@@ -43,7 +43,7 @@
                         android:ems="10"
                         android:hint="* Id Usuario"
                     android:textColorHint="@color/grey1"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:paddingLeft="1dp"
                         android:textColor="#03168B"
                         android:textSize="14dp" />
@@ -76,7 +76,7 @@
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
                     android:paddingLeft="1dp"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableStart="@drawable/ic_respu"
                     android:ems="10"
                     android:hint="* Nombre del usuario"
                     android:inputType="text"
@@ -101,7 +101,7 @@
                     android:text=""
                     android:drawablePadding="5dp"
                     android:paddingLeft="1dp"
-                    android:drawableStart="@drawable/ic_descrip"
+                    android:drawableStart="@drawable/ic_respu"
                     android:textSize="14dp"
                     android:textColor="#03168B"
                     android:hint="* Apellido del usuario"
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableStart="@drawable/ic_correo"
                     android:ems="10"
                     android:hint="* correo"
                     android:inputType="text"
@@ -147,7 +147,7 @@
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
                     app:boxBackgroundColor="@color/edittex"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableStart="@drawable/ic_user"
                     android:ems="10"
                     android:hint="* Usuario"
                     android:inputType="text"
@@ -188,7 +188,7 @@
                 android:textColorHint="@color/blue"
                 android:spinnerMode="dropdown"
                 android:entries="@array/TipoUsuario"
-                android:background="@drawable/estilospinner"
+                android:background="@drawable/estilospinner2"
                 style="@style/Widget.AppCompat.DropDownItem.Spinner"
                 />
             <Spinner
@@ -203,7 +203,7 @@
                 android:layout_marginRight="20dp"
                 android:textColorHint="@color/blue"
                 android:spinnerMode="dropdown"
-                android:background="@drawable/estilospinner"
+                android:background="@drawable/estilospinner2"
                 style="@style/Widget.AppCompat.DropDownItem.Spinner"
                 />
             <!-- android:entries="@array/estadoCategorias"-->
@@ -219,7 +219,7 @@
                 android:textColorHint="@color/blue"
                 android:spinnerMode="dropdown"
                 android:entries="@array/Preguntas"
-                android:background="@drawable/estilospinner"
+                android:background="@drawable/estilospinner2"
                 style="@style/Widget.AppCompat.DropDownItem.Spinner"
                 />
             <com.google.android.material.textfield.TextInputLayout
@@ -237,7 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:drawablePadding="5dp"
-                    android:drawableStart="@drawable/ic_key"
+                    android:drawableStart="@drawable/ic_respu"
                     android:ems="10"
                     android:hint="* Respuesta"
                     android:inputType="text"
@@ -316,6 +316,10 @@
                     android:textColor="@color/white"
                     android:background="@color/button"/>
             </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space40dp"
+                android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
