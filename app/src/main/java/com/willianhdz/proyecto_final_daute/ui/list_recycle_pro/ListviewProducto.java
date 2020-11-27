@@ -23,6 +23,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.willianhdz.proyecto_final_daute.MySingleton;
 import com.willianhdz.proyecto_final_daute.R;
 import com.willianhdz.proyecto_final_daute.Setting_VAR;
+import com.willianhdz.proyecto_final_daute.ui.dts.dto_categorias;
 import com.willianhdz.proyecto_final_daute.ui.dts.dto_productos;
 
 import org.json.JSONArray;
@@ -33,6 +34,7 @@ import java.util.ArrayList;
 
 
 public class ListviewProducto extends Fragment {
+    dto_categorias cat = new dto_categorias();
     private ListView lst;
     private Button listar;
     ArrayList<String> lista = null;
@@ -85,7 +87,10 @@ public class ListviewProducto extends Fragment {
 
                         listaProducto.add(objProductos);
 
-                        lista.add(listaProducto.get(i).getId_producto() + " - " + listaProducto.get(i).getNom_producto());
+                        lista.add("\n**       **\n"+ "Id Producto: "+listaProducto.get(i).getId_producto() + "\nNombre: " + listaProducto.get(i).getNom_producto() + "\nDescripcion "
+                                + listaProducto.get(i).getStock() + "\nPrecio: " + listaProducto.get(i).getPrecio() + "\nUnidad de medida: "
+                                + listaProducto.get(i).getUnidad_de_medida() + "\nEstado Producto: " + listaProducto.get(i).getEstado_producto() + "\nCategoria: "
+                                + listaProducto.get(i).getCategoria() + "\nFecha entrada " + listaProducto.get(i).getFecha());
 
                         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, lista);
                         lst.setAdapter(adapter);

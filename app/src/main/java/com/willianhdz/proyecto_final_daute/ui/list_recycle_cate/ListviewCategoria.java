@@ -79,7 +79,10 @@ public class ListviewCategoria extends Fragment {
 
                         listaCategoria.add(objCategorias);
 
-                        lista.add(listaCategoria.get(i).getId_categoria() + " - " + listaCategoria.get(i).getNom_categoria());
+                        //lista.add(listaCategoria.get(i).getId_categoria() + " - " + listaCategoria.get(i).getNom_categoria());
+
+                        lista.add("\n**       **\n"+ "Id Categoria: " + listaCategoria.get(i).getId_categoria() + "\nNombre Categoria: "
+                                + listaCategoria.get(i).getNom_categoria() + "\nEstado Categoria " + listaCategoria.get(i).getEstado_categoria());
 
                         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, lista);
                         lst.setAdapter(adapter);
