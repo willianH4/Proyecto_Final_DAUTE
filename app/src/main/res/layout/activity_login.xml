@@ -39,14 +39,25 @@
             android:layout_gravity="center"
             />
 
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su email"
+            android:layout_marginTop="@dimen/space30dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24sp"
+            />
 
         <EditText
             android:id="@+id/edtUsuario"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginTop="@dimen/space45dp"
             android:background="@drawable/estilotextview"
             android:textColorHint="@color/black"
+            android:layout_marginTop="5dp"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
             android:hint="E-mail"
@@ -57,12 +68,24 @@
 
             />
 
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su contraseña"
+            android:layout_marginTop="@dimen/space20dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text24sp"
+            />
+
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:hint="Password"
-            android:layout_marginTop="@dimen/space20dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/estilotextview"
             android:textColorHint="@color/black"
             android:textAlignment="center"
@@ -111,6 +134,5 @@
 
 
     </LinearLayout>
-
 
 </LinearLayout>

@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     android:background="@color/fondo2"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.dashboard.ListViewUsuario">
+    tools:context=".ui.list_recycle_usu.ListViewUsuario">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space10dp"
-        android:text="List Usuario"
+        android:text="@string/LvUsuarios"
         android:textAlignment="center"
         android:textColor="@color/midnightblue"
         android:textSize="@dimen/space25dp"

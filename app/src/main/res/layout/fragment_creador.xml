@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:background="@color/fondo"
     tools:context=".Creador">
+
     <TextView
         android:background="@color/navy"
         android:textColor="@android:color/white"
@@ -31,25 +32,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif-monospace"
-        android:text="Técnico Ingeniería de sistemas informáticos"
+        android:text="@string/carrera"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Cristian Vladimir Orellana Orellana"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        tools:ignore="HardcodedText" />
-
 
 
     <TextView
@@ -57,35 +45,80 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="Sistemas 21A"
+        android:text="@string/Devs"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         tools:ignore="HardcodedText" />
 
 
 
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <LinearLayout
             style="@style/miEstilo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space20dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/D1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
 
 
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/D2"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/D3"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/D4"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+            <!--
             <ImageView
                 android:id="@+id/imageButton2"
                 android:layout_width="400dp"
                 android:layout_height="@dimen/space300dp"
                 android:src="@drawable/cv"
                 android:layout_gravity="center"/>
+            -->
 
 
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
+        </LinearLayout>
 
 </LinearLayout>
