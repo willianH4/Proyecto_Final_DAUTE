@@ -196,10 +196,7 @@
                 android:layout_marginTop="@dimen/space20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/estilospinner"
-                android:popupBackground="@color/black"
-                android:backgroundTint="@color/black"
                 android:spinnerMode="dropdown"
-                android:outlineAmbientShadowColor="@color/black"
                 android:textColorHint="@android:color/holo_red_dark"/>
             <TextView
                 android:id="@+id/tv_fechahora"

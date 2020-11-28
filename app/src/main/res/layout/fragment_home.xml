@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo"
+    android:layout_margin="@dimen/space20dp"
     tools:context=".ui.home.HomeFragment">
 
     <ScrollView
@@ -15,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="@dimen/space20dp"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -23,11 +23,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Saludo"
-            android:textSize="@dimen/text18sp"
+            android:textSize="@dimen/text24sp"
             android:textColor="@color/blue"
             android:textAlignment="center"
             android:fontFamily="sans-serif-black"
-            android:layout_marginTop="@dimen/space20dp"
             />
 
         <ImageView

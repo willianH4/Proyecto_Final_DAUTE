@@ -189,8 +189,6 @@
                 android:textColorHint="@color/blue"
                 android:spinnerMode="dropdown"
                 android:popupBackground="@color/black"
-                android:backgroundTint="@color/black"
-                android:outlineAmbientShadowColor="@color/black"
                 android:entries="@array/TipoUsuario"
                 android:background="@drawable/estilospinner2"
                 style="@style/Widget.AppCompat.DropDownItem.Spinner"
@@ -224,8 +222,6 @@
                 android:spinnerMode="dropdown"
                 android:entries="@array/Preguntas"
                 android:popupBackground="@color/black"
-                android:backgroundTint="@color/black"
-                android:outlineAmbientShadowColor="@color/black"
                 android:background="@drawable/estilospinner2"
                 style="@style/Widget.AppCompat.DropDownItem.Spinner"
                 />
